@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 import base64
-from langchain import hub
 from langchain.document_loaders import PyPDFLoader  # 최신 경로로 수정
 from langchain.text_splitter import RecursiveCharacterTextSplitter  # 모듈명 수정
 from langchain_openai import OpenAIEmbeddings
