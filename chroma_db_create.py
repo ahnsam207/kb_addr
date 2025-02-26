@@ -2,16 +2,12 @@ import streamlit as st
 import requests
 import base64
 # 랭체인 활용시 참고할 만한 프롬프트가 다수 존재하며 공유와 관리를 위한 랭체인 관리 플랫폼
-from langchain import hub
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_openai import ChatOpenAI
-# chain이 받은 입력을 수정하지 않고 그대로 다음 요소에 전달
-from langchain_core.runnables import RunnablePassthrough
-# LLM의 답변을 문자열로 출력
-from langchain_core.output_parsers import StrOutputParser
+
 
 # GitHub 정보
 GITHUB_REPO = "ahnsam207/kb_addr"    ######## 폴더 지정 해야함 #######
