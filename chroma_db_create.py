@@ -27,7 +27,7 @@ docs = text_splitter.split_documents(pages)
 
 # ChromaDB에 청크들을 벡터 임베딩으로 저장 (OpenAI 임베딩 모델 활용)
 embedding_function = OpenAIEmbeddings(model="text-embedding-3-small")  # model 인자 이동
-vector_store = Chroma.from_documents(docs, embedding_function=embedding_function, persist_directory="./chroma_db", api_key = st.secrets["api_key"])
+vector_store = Chroma.from_documents(docs, embedding_function=embedding_function, persist_directory="./chroma_db", openai_api_key = st.secrets["api_key"])
 vector_store.persist()  # ChromaDB 저장
 
 retriever = vector_store.as_retriever()
