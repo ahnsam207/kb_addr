@@ -52,7 +52,7 @@ rag_chain = (
     | llm
     | StrOutputParser()
 )
-st.header("KB 비상연락망 ChatBOT")
+st.header("KB 비상연락망 BOT")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role":"assistant","content":"비상연락망 AI입니다. 무엇이든 물어보세요!"}]
