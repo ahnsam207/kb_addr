@@ -52,10 +52,10 @@ rag_chain = (
     | llm
     | StrOutputParser()
 )
-st.header("KB 비상연락망 챗봇")
+st.header("KB 비상연락망 AI")
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role":"assistant","content":"비상연락망에 대해서 무엇이든 물어보세요!"}]
+    st.session_state["messages"] = [{"role":"assistant","content":"비상연락망 AI입니다. 무엇이든 물어보세요!"}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg['role']).write(msg['content'])
