@@ -36,6 +36,7 @@ Use the following pieces of retrieved context to answer the question. \
 If you don't konw the answer, just say that you don't konw. \
 Keep the answer perfect. please use imogi with the answer.
 Please answer in Korean and use respectful language.
+{context}
 """
 
 qa_prompt = ChatPromptTemplate.from_messages(
