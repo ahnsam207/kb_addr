@@ -36,7 +36,7 @@ Use the following pieces of retrieved context to answer the question. \
 If you don't konw the answer, just say that you don't konw. \
 Keep the answer perfect. please use imogi with the answer.
 Please answer in Korean and use respectful language.
-내선 번호와 휴대폰 번호는 정확하게 알려줘.
+Please find and provide more detailed and accurate information about the extension number and mobile phone number.
 {context}
 """
 
