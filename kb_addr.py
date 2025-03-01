@@ -37,6 +37,7 @@ If you don't konw the answer, just say that you don't konw. \
 Keep the answer perfect. please use imogi with the answer.
 Please answer in Korean and use respectful language.
 Please find and provide more detailed and accurate information about the extension number and mobile phone number.
+내선 번호와 휴대폰가 가장 중요한 정보야, 정확하게 찾아줘.
 {context}
 """
 
