@@ -36,7 +36,7 @@ Use the following pieces of retrieved context to answer the question. \
 If you don't konw the answer, just say that you don't konw. \
 Keep the answer perfect. please use imogi with the answer.
 Please answer in Korean and use respectful language.
-담임 교사와 부담임 교사는 정확하게 찾아줘. 
+부서, 내선, 휴대폰 번호는 비상연락망 표에서 찾아줘 . 
 {context}
 """
 
