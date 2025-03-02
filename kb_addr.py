@@ -21,8 +21,8 @@ loader = PyPDFLoader(r"250304_kb_addr.pdf")
 pages = loader.load_and_split()
 
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1500, 
-    chunk_overlap=100
+    chunk_size=1000, 
+    chunk_overlap=0
 )
 split_docs = text_splitter.split_documents(pages)
 persist_directory = "./chroma_db"
