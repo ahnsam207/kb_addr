@@ -20,7 +20,11 @@ def format_docs(docs):
 loader = PyPDFLoader(r"250304_kb_addr.pdf")
 pages = loader.load_and_split()
 
-text_splitter = RecursiveCharacterTextSplitter(seperators = ["\n\n", "\n", " ", ""], chunk_size=500, chunk_overlap=0,)
+text_splitter = RecursiveCharacterTextSplitter(
+    seperators = ["\n\n", "\n", " ", ""], 
+    chunk_size=500, 
+    chunk_overlap=0,
+)
 split_docs = text_splitter.split_documents(pages)
 persist_directory = "./chroma_db"
 vectorstore = Chroma.from_documents(
