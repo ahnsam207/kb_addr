@@ -21,7 +21,6 @@ loader = PyPDFLoader(r"250304_kb_addr.pdf")
 pages = loader.load_and_split()
 
 text_splitter = RecursiveCharacterTextSplitter(
-    seperators = ["\n\n", "\n", " ", ""], 
     chunk_size=500, 
     chunk_overlap=100
 )
