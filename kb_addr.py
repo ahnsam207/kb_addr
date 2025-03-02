@@ -60,7 +60,7 @@ rag_chain = (
 st.header("KB 비상연락망 BOT")
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role":"assistant","content":"KB 비상연락망 AI입니다.  AI도 실수 할 수 있어요.^^"}]
+    st.session_state["messages"] = [{"role":"assistant","content":"KB 비상연락망 AI입니다. 검색할 사람의 이름을 입력하세요."}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg['role']).write(msg['content'])
