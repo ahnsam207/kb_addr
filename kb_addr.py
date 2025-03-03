@@ -64,8 +64,8 @@ rag_chain = (
     | StrOutputParser()
 )
 st.header("KB 비상연락망 BOT")
-st.write("AI 모델이 아직은 한글을 완벽하게 처리하지 못하는 것 같습니다.")
-st.write("경복 선생님의 비상연락망 AI RAG 시스템을 구현했는데, 실수가 많아요.")
+st.write("비상연락망을 AI RAG 시스템으로 구현했는데, 실수가 많아요.")
+st.write("AI 학습 모델이 아직은 한글을 완벽하게 처리하지 못하는 것 같습니다.")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role":"assistant","content":"KB 비상연락망 AI입니다."}]
 
