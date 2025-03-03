@@ -32,7 +32,7 @@ split_docs = text_splitter.split_documents(pages)
 persist_directory = "./chroma_db"
 vectorstore = Chroma.from_documents(
     split_docs,
-    OpenAIEmbeddings(model="text-embedding-ada-002"),
+    OpenAIEmbeddings(model="text-embedding-3-large"),
     persist_directory=persist_directory
 )
 retriever = vectorstore.as_retriever()
