@@ -25,7 +25,7 @@ pages = loader.load_and_split()
 
 text_splitter = RecursiveCharacterTextSplitter(
     separators = ["/n", " "],
-    chunk_size=1000, 
+    chunk_size=2000, 
     chunk_overlap=500
 )
 split_docs = text_splitter.split_documents(pages)
