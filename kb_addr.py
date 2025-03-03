@@ -65,7 +65,7 @@ rag_chain = (
 )
 st.header("KB 비상연락망 RAG 시스템")
 st.write("비상연락망을 AI RAG 시스템으로 구현했습니다.")
-st.write("AI 학습 모델은 상당한 퍼포먼스를 필요로 하는데 \n 현재 무료 클라우드를 활용 중이라 성능이 상당히 떨어집니다.\n 그로 인해 AI가 실수를 많이 합니다. 양해 부탁드립니다.")
+st.write("AI 학습 모델은 상당한 퍼포먼스를 필요로 하는데 \n\n 현재 무료 클라우드를 활용 중이라 성능이 상당히 떨어집니다.\n\n 그로 인해 AI가 실수를 많이 합니다. 양해 부탁드립니다.")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role":"assistant","content":"KB 비상연락망 AI입니다."}]
 
