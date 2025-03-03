@@ -15,3 +15,4 @@ scikit-learn
 nltk
 tiktoken
 python-docx
+docx2txt
