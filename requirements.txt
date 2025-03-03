@@ -7,3 +7,10 @@ langchain-chroma
 pysqlite3-binary
 pypdf
 langchain-text-splitters
+transformers
+sentencepiece
+torch
+numpy
+scikit-learn
+nltk
+tiktoken
