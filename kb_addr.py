@@ -4,7 +4,7 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
-from langchain_community.document_loaders import Docx2txtloader
+from langchain_community.document_loaders import Docx2txtLoader
 # from langchain.document_transformers import LongContextReorder
 import os
 import streamlit as st
