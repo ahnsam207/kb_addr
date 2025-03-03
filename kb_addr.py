@@ -4,6 +4,7 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+from langchain_community.document_loaders import Docx2txtloader
 # from langchain.document_transformers import LongContextReorder
 import os
 import streamlit as st
@@ -18,7 +19,8 @@ os.environ["OPENAI_API_KEY"] = st.secrets["api_key"]
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
-loader = PyPDFLoader(r"250304_kb_addr.pdf")
+#loader = PyPDFLoader(r"250304_kb_addr.pdf")
+loader = Docx2txtLoader("kb_addr.docx")
 pages = loader.load_and_split()
 
 text_splitter = RecursiveCharacterTextSplitter(
