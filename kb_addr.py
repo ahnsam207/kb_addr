@@ -32,7 +32,7 @@ split_docs = text_splitter.split_documents(pages)
 persist_directory = "./chroma_db"
 vectorstore = Chroma.from_documents(
     split_docs,
-    OpenAIEmbeddings(model="text-embedding-3-small"),
+    OpenAIEmbeddings(model="text-embedding-ada-002"),
     persist_directory=persist_directory
 )
 retriever = vectorstore.as_retriever()
@@ -64,9 +64,11 @@ rag_chain = (
     | StrOutputParser()
 )
 st.header("KB 비상연락망 BOT")
-
+st.write("AI 모델이 아직은 한글을 완벽하게 처리하지 못하는 것 같습니다.")
+st.write("경복 선생님의 비상연락망 AI RAG 시스템을 구현했는데, 실수가 많아요.")
+st.write("AI 발전 속도가 빠르니 기대해 주세요. AI융합콘텐츠과의 성장도 응원해 주세요.^^")
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role":"assistant","content":"KB 비상연락망 AI입니다. AI도 실수를 해요.^^"}]
+    st.session_state["messages"] = [{"role":"assistant","content":"KB 비상연락망 AI입니다."}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg['role']).write(msg['content'])
