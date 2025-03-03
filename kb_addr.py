@@ -4,7 +4,7 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
-from langchain.document_transformers import LongContextReorder
+# from langchain.document_transformers import LongContextReorder
 import os
 import streamlit as st
 
@@ -33,8 +33,8 @@ vectorstore = Chroma.from_documents(
     persist_directory=persist_directory
 )
 retriever = vectorstore.as_retriever()
-reordering = LongContextReorder()
-retriever = reordering.transform_documents(retriever)
+# reordering = LongContextReorder()
+# retriever = reordering.transform_documents(retriever)
 
 qa_system_prompt ="""
 You are an assistant for question-answering task. \
