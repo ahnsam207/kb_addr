@@ -14,3 +14,4 @@ numpy
 scikit-learn
 nltk
 tiktoken
+python-docx
