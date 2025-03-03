@@ -25,8 +25,8 @@ pages = loader.load_and_split()
 
 text_splitter = RecursiveCharacterTextSplitter(
     separators = ["/n", " "],
-    chunk_size=2000, 
-    chunk_overlap=500
+    chunk_size=1500, 
+    chunk_overlap=300
 )
 split_docs = text_splitter.split_documents(pages)
 persist_directory = "./chroma_db"
