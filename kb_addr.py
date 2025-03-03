@@ -24,7 +24,7 @@ loader = Docx2txtLoader("kb_addr.docx")
 pages = loader.load_and_split()
 
 text_splitter = RecursiveCharacterTextSplitter(
-    separators = ["\n\n", "/n", " ", ""],
+    separators = ["\n\n", "/n"],
     chunk_size=1500, 
     chunk_overlap=0
 )
