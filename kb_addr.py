@@ -34,7 +34,7 @@ vectorstore = Chroma.from_documents(
 )
 retriever = vectorstore.as_retriever()
 reordering = LongContextReorder()
-retriever = reordering.transfrom_documents(retriever)
+retriever = reordering.transform_documents(retriever)
 
 qa_system_prompt ="""
 You are an assistant for question-answering task. \
