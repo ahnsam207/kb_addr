@@ -24,9 +24,9 @@ loader = Docx2txtLoader("kb_addr.docx")
 pages = loader.load_and_split()
 
 text_splitter = RecursiveCharacterTextSplitter(
-    separators = ["\n\n", "/n"],
+    #separators = ["\n\n", "/n"],
     chunk_size=1000, 
-    chunk_overlap=100
+    chunk_overlap=0
 )
 split_docs = text_splitter.split_documents(pages)
 persist_directory = "./chroma_db"
