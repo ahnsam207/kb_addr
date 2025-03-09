@@ -91,6 +91,9 @@ conversational_rag_chain = RunnableWithMessageHistory(
 st.header("KB 비상연락망 BOT")
 st.write("KB 비상연락망 AI입니다. 무엇이든 물어보세요!")
 
+if "messages" not in st.session_state:
+    st.session_state["messages"] = []  # 초기화
+
 for msg in chat_history.messages:
     st.chat_message(msg.type).write(msg.content)
 
