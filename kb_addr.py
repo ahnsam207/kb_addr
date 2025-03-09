@@ -20,7 +20,7 @@ sys.modules['sqlite3'] = sys.modules['pysqlite3']
 from langchain_chroma import Chroma
 
 # os.environ["OPENAI_API_KEY"] = st.secrets["api_key"]
-openai_api_key = st.secrets["api_key"]
+os.environ["OPENAI_API_KEY"] = st.secrets["api_key"]
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
