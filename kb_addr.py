@@ -89,7 +89,8 @@ conversational_rag_chain = RunnableWithMessageHistory(
 #     | StrOutputParser()
 # )
 st.header("KB 비상연락망 BOT")
-st.write("KB 비상연락망 AI입니다. 무엇이든 물어보세요!")
+st.write("비상연락망을 AI RAG 시스템으로 구현했습니다. 무엇이든 물어보세요!")
+st.write("RAG 시스템은 AI 최신 기술로 높은 퍼포먼스를 필요로 하는데 현재 무료 클라우드를 활용 중이라 \n\n성능이 조금 떨어집니다. AI 속도가 조금 느릴 수 있고 간혹 실수도 합니다.^^")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = []  # 초기화
